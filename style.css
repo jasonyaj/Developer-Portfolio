@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+button {
+    background-color: rgb(255, 255, 110);
+    padding: .5rem 1rem;
+    border: none;
+}
+
+.title {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.background-change {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2e3038;
+    padding: 1rem 0;
+}
+.spanBackground {
+    background-color: #2e3038;
+    padding: 1rem 0;
+    margin:1em -100%; /* old browsers fallback */
+    margin:1em calc(50% - 50vw);
+}
+
+/* Navigator Bar */
+nav {
+    /* background-color: red; */
+    padding: 2rem 0;
+}
+
+nav > h1 {
+    font-size: smaller;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Intro Header */
+.intro {
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 2.75rem;
+    margin-bottom: .75rem;
+}
+
+/* Logos */
+.logos {
+    max-width: 4.5rem;
+    padding: 2.5rem 0;
+}
+
+/* Websites */
+.websites {
+    margin-bottom: 3rem;
+}
+
+.screenshot {
+    max-width: 375px;
+}
+
+/* About Me */
+.about {
+    background-color: #2e3038;
+    padding: 3rem 0;
+    min-width: 100%;
+}
+
+/* Contact */
+.contact {
+    max-width: 375px;
+    padding: 3rem 0;
+}
+
+/* Footer */
