@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,16 +21,19 @@
 body {
     background-color: black;
     color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 button {
     background-color: rgb(255, 255, 110);
     padding: .5rem 1rem;
     border: none;
+    font-family: 'Prata', serif;
+    cursor: pointer;
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-bottom: 0.5rem;
 }
 
@@ -44,6 +50,10 @@ button {
     padding: 1rem 0;
     margin:1em -100%; /* old browsers fallback */
     margin:1em calc(50% - 50vw);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Prata', serif;
 }
 
 /* Navigator Bar */
@@ -71,7 +81,7 @@ a {
 }
 
 h2 {
-    font-size: 2.75rem;
+    font-size: 2.1rem;
     margin-bottom: .75rem;
 }
 
@@ -94,7 +104,6 @@ h2 {
 .about {
     background-color: #2e3038;
     padding: 3rem 0;
-    min-width: 100%;
 }
 
 /* Contact */
@@ -103,4 +112,14 @@ h2 {
     padding: 3rem 0;
 }
 
-/* Footer */
+@media only screen and (max-width: 480px){
+    
+}
+
+@media only screen and (min-width: 481px){
+
+}
+
+@media only screen and (min-width: 1024px){
+
+}
