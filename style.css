@@ -1,125 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 80rem; /*64rem*/
+  margin: 0 auto;
 }
 
 .flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
 }
 
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Inter', sans-serif;
+  background-color: black;
+  color: white;
+  font-family: "Inter", sans-serif;
 }
 
 button {
-    background-color: rgb(255, 255, 110);
-    padding: .5rem 1rem;
-    border: none;
-    font-family: 'Prata', serif;
-    cursor: pointer;
+  background-color: #fbe850;
+  padding: 1rem 2rem;
+  border: none;
+  font-family: "Prata", serif;
+	font-size: large;
+  cursor: pointer;
 }
 
 .title {
-    font-size: 1.5rem;
-    padding-bottom: 0.5rem;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .background-change {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #2e3038;
-    padding: 1rem 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2e3038;
+  padding: 1rem 0;
 }
 .spanBackground {
-    background-color: #2e3038;
-    padding: 1rem 0;
-    margin:1em -100%; /* old browsers fallback */
-    margin:1em calc(50% - 50vw);
+  background-color: #2e3038;
+  padding: 1rem 0;
+  margin: 1em -100%; /* old browsers fallback */
+  margin: 1em calc(50% - 50vw);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Prata', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Prata", serif;
+}
+
+p {
+	font-size: 1.25rem;
 }
 
 /* Navigator Bar */
 nav {
-    /* background-color: red; */
-    padding: 2rem 0;
+  padding: 3rem 0;
+	margin-bottom: 3rem;
 }
 
 nav > h1 {
-    font-size: smaller;
+  font-size: x-large;
 }
 
 li {
-    list-style: none;
+  list-style: none;
+	font-size: larger;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 /* Intro Header */
 .intro {
-    max-width: 500px;
+  max-width: 45rem;
 }
 
 h2 {
-    font-size: 2.1rem;
-    margin-bottom: .75rem;
+  font-size: 3.5rem;
+  margin-bottom: 0.75rem;
 }
 
 /* Logos */
 .logos {
-    max-width: 4.5rem;
-    padding: 2.5rem 0;
+  padding: 4rem 0;
 }
 
 /* Websites */
 .websites {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .screenshot {
-    max-width: 375px;
+	min-width: 100%;
+}
+
+.webInfo {
+	flex: 1;
+	align-self: flex-start;
 }
 
 /* About Me */
 .about {
-    background-color: #2e3038;
-    padding: 3rem 0;
+  background-color: #2e3038;
+  padding: 3rem 0;
 }
 
 /* Contact */
 .contact {
-    max-width: 375px;
-    padding: 3rem 0;
+  max-width: 37.5rem;
+  padding: 3rem 0;
 }
 
-@media only screen and (max-width: 480px){
-    
+.icons {
+	gap: 1.25rem;
 }
 
-@media only screen and (min-width: 481px){
-
+@media only screen and (max-width: 480px) {
+  .sm-4 {
+    width: 100%;
+  }
+  .sm-0 {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 481px) {
+  .med-2 {
+    width: 50%;
+  }
+}
 
+@media only screen and (min-width: 1024px) {
+  .lg-1 {
+    width: 25%;
+  }
+  .lg-3 {
+    width: 75%;
+  }
 }
